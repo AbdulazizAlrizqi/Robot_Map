@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Map</title>
+    <link rel="stylesheet" type="text/css" href="robotmap.css">
+  </head>
+  <body>
+    <form method="post", action="mdata.php">
+    <div id="container">
+      <div id="buttons">
+        <button id="forward">Forward</button>
+        <div>
+          <button id="left">Left</button>
+          <button id="stop">Stop</button>
+          <button id="right">Right</button>
+        </div>
+        <button id="backward">Backward</button>
+        <div>
+          <pre id="distance">Total distance: 0 pixels
+Current distance: 0 pixels</pre>
+          <pre id="direction">Direction: STOP
+Angle: 0 degrees</pre>
+        </div>
+      </div>
+      <canvas id="map" width="700" height="700"></canvas>
+    </div>
+</form>
+<script type="text/javascript" src="robotmap.js"></script>
+  </body>
+</html>
